@@ -53,7 +53,7 @@ NextNest bridges the gap between property owners and seekers. It allows users to
 | ![Login Screen](login.jpg) | ![Home Screen](home.jpg) |
 
 ### Post a New Property
-![New Post Screen](new post.jpg)
+![New Post Screen](post.jpg)
 
 ## 🤝 Contributing
 
