@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dcef9cc7-bdab-4205-b222-45e5232d3640" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="CSS File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2qhbb32EyRTEorsidAU7vo7qxd3" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.HelloApplication.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "D:/4th/AOOP/nextNest/nextNest/src/main/java/com/example/nextnest",
+    "last_opened_file_path": "D:/Sifat/PrePost1.0/nextNest",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.JavaFX",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Hp\Desktop\nextNest\src\main\resources" />
+      <recent name="C:\Users\Hp\Desktop\newFx\nextNest\src\main\resources" />
+      <recent name="C:\Users\Hp\Desktop\newFx\nextNest\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Hp\Desktop\nextNest\src\main\resources" />
+      <recent name="C:\Users\Hp\Desktop\nextNest\src\main\resources\com\example\nextnest" />
+      <recent name="C:\Users\Hp\Desktop\newFx\nextNest\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.nextnest.HelloApplication" />
+      <module name="nextNest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.nextnest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.HelloApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dcef9cc7-bdab-4205-b222-45e5232d3640" name="Changes" comment="" />
+      <created>1735117823533</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1735117823533</updated>
+      <workItem from="1735117824507" duration="19847000" />
+      <workItem from="1735210308850" duration="9404000" />
+      <workItem from="1735227098735" duration="7574000" />
+      <workItem from="1735443275179" duration="5916000" />
+      <workItem from="1735490713493" duration="8588000" />
+      <workItem from="1735565528450" duration="20610000" />
+      <workItem from="1735676679524" duration="94000" />
+      <workItem from="1736877030007" duration="1787000" />
+      <workItem from="1736908136406" duration="2897000" />
+      <workItem from="1736917122744" duration="775000" />
+      <workItem from="1736918616783" duration="542000" />
+      <workItem from="1736922611010" duration="91000" />
+      <workItem from="1737014882980" duration="2567000" />
+      <workItem from="1737021172324" duration="9372000" />
+      <workItem from="1737033060049" duration="7791000" />
+      <workItem from="1737041501167" duration="2001000" />
+      <workItem from="1737094173337" duration="9466000" />
+      <workItem from="1737204454530" duration="13070000" />
+      <workItem from="1737273850935" duration="26000" />
+      <workItem from="1737273987183" duration="5922000" />
+      <workItem from="1737299978754" duration="7116000" />
+      <workItem from="1737366327454" duration="1955000" />
+      <workItem from="1737368544066" duration="84000" />
+      <workItem from="1737370703351" duration="602000" />
+      <workItem from="1737400549970" duration="657000" />
+      <workItem from="1737464093609" duration="18551000" />
+      <workItem from="1737490566006" duration="11000" />
+      <workItem from="1737490792386" duration="1016000" />
+      <workItem from="1737552190905" duration="2577000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

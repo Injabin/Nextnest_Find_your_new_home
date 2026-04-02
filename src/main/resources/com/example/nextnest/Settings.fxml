@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="975.0" prefWidth="1291.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.nextnest.SettingsController">
+   <children>
+      <AnchorPane prefHeight="975.0" prefWidth="273.0" style="-fx-background-color: #2D3447;">
+         <children>
+            <ImageView fitHeight="231.0" fitWidth="233.0" layoutX="14.0" layoutY="14.0">
+               <image>
+                  <Image url="@../../../logo%20bgr.png" />
+               </image>
+            </ImageView>
+            <Line endX="69.0" layoutX="115.0" layoutY="260.0" startX="-100.0" stroke="#a0a2ab" />
+            <Button layoutX="37.0" layoutY="478.0" mnemonicParsing="false" onAction="#home" prefHeight="38.0" prefWidth="188.0" style="-fx-background-color: tranparent; -fx-border-color: a0a2ab;" text="DashBord" textFill="#a0a2ab">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <effect>
+                  <Glow level="0.0" />
+               </effect>
+            </Button>
+            <Label layoutX="14.0" layoutY="267.0" prefHeight="127.0" prefWidth="233.0" text="Welcome to NextNest! &#10;Discover, connect, and settle&#10;effortlessly. Your dream home&#10;is just a click away!&#10;" textAlignment="CENTER" textFill="#a0a2ab">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Button layoutX="37.0" layoutY="540.0" mnemonicParsing="false" onAction="#Profile" prefHeight="38.0" prefWidth="188.0" style="-fx-background-color: tranparent; -fx-border-color: a0a2ab;" text="Profile" textFill="#a0a2ab">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button layoutX="37.0" layoutY="601.0" mnemonicParsing="false" onAction="#yourpost" prefHeight="38.0" prefWidth="188.0" style="-fx-background-color: tranparent; -fx-border-color: a0a2ab;" text="NewPost" textFill="#a0a2ab">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button layoutX="37.0" layoutY="661.0" mnemonicParsing="false" onAction="#Review" prefHeight="47.0" prefWidth="188.0" style="-fx-background-color: tranparent; -fx-border-color: a0a2ab;" text="Review&amp;Complain" textFill="#a0a2ab">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Line endX="110.0" layoutX="137.0" layoutY="765.0" startX="-111.0" stroke="#a0a2ab" />
+            <Button layoutX="78.0" layoutY="790.0" mnemonicParsing="false" onAction="#aboutUs" prefHeight="31.0" prefWidth="106.0" style="-fx-background-color: tranparent; -fx-border-color: a0a2ab;" text="AboutUs" textFill="#a0a2ab">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="273.0" prefHeight="50.0" prefWidth="1018.0" style="-fx-background-color: #2D3447;" stylesheets="@textf.css">
+         <children>
+            <MenuBar layoutX="778.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="54.0" prefWidth="233.0" style="-fx-background-color: transparent;">
+               <menus>
+                  <Menu mnemonicParsing="false">
+                     <graphic>
+                        <Button mnemonicParsing="false" onAction="#Profile" prefHeight="39.0" prefWidth="46.0" style="-fx-background-color: transparent;">
+                           <graphic>
+                              <ImageView fitHeight="31.0" fitWidth="47.0">
+                                 <image>
+                                    <Image url="@../../../pp.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </graphic>
+                  </Menu>
+                  <Menu mnemonicParsing="false">
+                     <items>
+                        <MenuItem mnemonicParsing="false">
+                           <graphic>
+                              <Label text="Mr.Fahad has conframed your deal" textFill="#a0a2ab" />
+                           </graphic>
+                        </MenuItem>
+                        <MenuItem mnemonicParsing="false">
+                           <graphic>
+                              <Label text="Mr.Fahad has cancenled your deal" textFill="#a0a2ab" />
+                           </graphic>
+                        </MenuItem>
+                     </items>
+                     <graphic>
+                        <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="51.0" style="-fx-background-color: transparent;">
+                           <graphic>
+                              <ImageView fitHeight="37.0" fitWidth="38.0">
+                                 <image>
+                                    <Image url="@../../../noti.png" />
+                                 </image>
+                                 <effect>
+                                    <Glow level="1.0" />
+                                 </effect>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </graphic>
+                  </Menu>
+                  <Menu mnemonicParsing="false">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#settings">
+                           <graphic>
+                              <Button mnemonicParsing="false" style="-fx-background-color: transparent;" text="Settings" />
+                           </graphic>
+                        </MenuItem>
+                        <MenuItem mnemonicParsing="false" onAction="#logout">
+                           <graphic>
+                              <Button mnemonicParsing="false" style="-fx-background-color: trsnpsrent;" text="Logout" />
+                           </graphic>
+                        </MenuItem>
+                     </items>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="30.0">
+                           <image>
+                              <Image url="@../../../best3line.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Menu>
+               </menus>
+            </MenuBar>
+         </children>
+      </AnchorPane>
+      <ScrollPane layoutX="273.0" layoutY="54.0" prefHeight="926.0" prefWidth="1018.0">
+         <content>
+            <AnchorPane fx:id="rootPane2" prefHeight="980.0" prefWidth="1018.0" style="-fx-background-color: #151928;">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#151928" height="200.0" stroke="#a0a2ab" strokeType="INSIDE" strokeWidth="5.0" width="200.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#151928" height="200.0" layoutX="21.0" layoutY="55.0" stroke="#a0a2ab" strokeType="INSIDE" strokeWidth="5.0" width="200.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#151928" height="200.0" layoutX="45.0" layoutY="174.0" stroke="#a0a2ab" strokeType="INSIDE" strokeWidth="5.0" width="200.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#151928" height="200.0" layoutX="21.0" layoutY="290.0" stroke="#a0a2ab" strokeType="INSIDE" strokeWidth="5.0" width="200.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#151928" height="200.0" layoutX="85.0" layoutY="420.0" stroke="#a0a2ab" strokeType="INSIDE" strokeWidth="5.0" width="200.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#151928" height="200.0" layoutX="30.0" layoutY="504.0" stroke="#a0a2ab" strokeType="INSIDE" strokeWidth="5.0" width="200.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#151928" height="200.0" layoutX="76.0" layoutY="620.0" stroke="#a0a2ab" strokeType="INSIDE" strokeWidth="5.0" width="200.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#151928" height="200.0" layoutX="14.0" layoutY="700.0" stroke="#a0a2ab" strokeType="INSIDE" strokeWidth="5.0" width="200.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#151928" height="200.0" layoutX="28.0" layoutY="764.0" stroke="#a0a2ab" strokeType="INSIDE" strokeWidth="5.0" width="200.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#151928" height="200.0" layoutX="54.0" layoutY="390.0" stroke="#a0a2ab" strokeType="INSIDE" strokeWidth="5.0" width="200.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#151928" height="200.0" layoutX="814.0" stroke="#a0a2ab" strokeType="INSIDE" strokeWidth="5.0" width="200.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#151928" height="200.0" layoutX="750.0" layoutY="63.0" stroke="#a0a2ab" strokeType="INSIDE" strokeWidth="5.0" width="200.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#151928" height="200.0" layoutX="797.0" layoutY="174.0" stroke="#a0a2ab" strokeType="INSIDE" strokeWidth="5.0" width="200.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#151928" height="200.0" layoutX="769.0" layoutY="298.0" stroke="#a0a2ab" strokeType="INSIDE" strokeWidth="5.0" width="200.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#151928" height="200.0" layoutX="814.0" layoutY="428.0" stroke="#a0a2ab" strokeType="INSIDE" strokeWidth="5.0" width="200.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#151928" height="200.0" layoutX="759.0" layoutY="512.0" stroke="#a0a2ab" strokeType="INSIDE" strokeWidth="5.0" width="200.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#151928" height="200.0" layoutX="814.0" layoutY="646.0" stroke="#a0a2ab" strokeType="INSIDE" strokeWidth="5.0" width="200.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#151928" height="200.0" layoutX="783.0" layoutY="712.0" stroke="#a0a2ab" strokeType="INSIDE" strokeWidth="5.0" width="200.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#151928" height="200.0" layoutX="797.0" layoutY="787.0" stroke="#a0a2ab" strokeType="INSIDE" strokeWidth="5.0" width="200.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#151928" height="200.0" layoutX="783.0" layoutY="398.0" stroke="#a0a2ab" strokeType="INSIDE" strokeWidth="5.0" width="200.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#151928" height="200.0" layoutX="167.0" layoutY="787.0" stroke="#a0a2ab" strokeType="INSIDE" strokeWidth="5.0" width="200.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#151928" height="200.0" layoutX="298.0" layoutY="720.0" stroke="#a0a2ab" strokeType="INSIDE" strokeWidth="5.0" width="200.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#151928" height="200.0" layoutX="391.0" layoutY="773.0" stroke="#a0a2ab" strokeType="INSIDE" strokeWidth="5.0" width="200.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#151928" height="200.0" layoutX="535.0" layoutY="720.0" stroke="#a0a2ab" strokeType="INSIDE" strokeWidth="5.0" width="200.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#151928" height="200.0" layoutX="615.0" layoutY="764.0" stroke="#a0a2ab" strokeType="INSIDE" strokeWidth="5.0" width="200.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#151928" height="200.0" layoutX="100.0" layoutY="8.0" stroke="#a0a2ab" strokeType="INSIDE" strokeWidth="5.0" width="200.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#151928" height="93.0" layoutX="228.0" layoutY="9.0" stroke="#a0a2ab" strokeType="INSIDE" strokeWidth="5.0" width="200.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#151928" height="123.0" layoutX="365.0" layoutY="28.0" stroke="#a0a2ab" strokeType="INSIDE" strokeWidth="5.0" width="200.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#151928" height="77.0" layoutX="550.0" layoutY="17.0" stroke="#a0a2ab" strokeType="INSIDE" strokeWidth="5.0" width="200.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#151928" height="93.0" layoutX="683.0" layoutY="70.0" stroke="#a0a2ab" strokeType="INSIDE" strokeWidth="5.0" width="200.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#151928" height="93.0" layoutX="697.0" layoutY="37.0" stroke="#a0a2ab" strokeType="INSIDE" strokeWidth="5.0" width="200.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#151928" height="93.0" layoutX="137.0" layoutY="37.0" stroke="#a0a2ab" strokeType="INSIDE" strokeWidth="5.0" width="200.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#151928" height="200.0" layoutX="145.0" layoutY="220.0" stroke="#a0a2ab" strokeType="INSIDE" strokeWidth="5.0" width="200.0" />
+                  <AnchorPane layoutX="266.0" layoutY="130.0" prefHeight="686.0" prefWidth="531.0" style="-fx-background-color: #151928; -fx-border-color: #a0a2ab; -fx-border-width: 5;">
+                     <children>
+                        <Label alignment="CENTER" layoutX="98.0" layoutY="66.0" prefHeight="93.0" prefWidth="310.0" style="-fx-text-fill: #a0a2ab; -fx-font-size: 28px; -fx-font-weight: bold; -fx-border-color: a0a2ab;" text="Settings">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="112.0" layoutY="290.0" text="Updates" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="209.0" layoutY="294.0" mnemonicParsing="false" onAction="#handleCheckButton" prefHeight="27.0" prefWidth="185.0" style="-fx-background-color: #151928; -fx-border-color: #a0a2ab;" text="Cheak" textFill="#a0a2ab" />
+                        <Label layoutX="111.0" layoutY="387.0" prefHeight="35.0" prefWidth="78.0" text="Theme" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="112.0" layoutY="486.0" prefHeight="27.0" prefWidth="193.0" text="Change Passward" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="305.0" layoutY="490.0" mnemonicParsing="false" onAction="#ChangePassword" prefHeight="27.0" prefWidth="168.0" style="-fx-background-color: #151928; -fx-border-color: #a0a2ab;" text="Change" textFill="#a0a2ab" />
+                        <Label layoutX="111.0" layoutY="586.0" text="Delelet Account" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="291.0" layoutY="590.0" mnemonicParsing="false" onAction="#deleteAccount" prefHeight="27.0" prefWidth="168.0" style="-fx-background-color: #151928; -fx-border-color: #a0a2ab;" text="Delete" textFill="#a0a2ab" />
+                        <ComboBox fx:id="themeComboBox" layoutX="211.0" layoutY="391.0" prefHeight="25.0" prefWidth="188.0" style="-fx-background-color: #151928; -fx-border-color: #a0a2ab;" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

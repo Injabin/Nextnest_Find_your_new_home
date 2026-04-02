@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rootPane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="975.0" prefWidth="1291.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.nextnest.PostDetailsController">
+   <children>
+      <AnchorPane layoutX="273.0" prefHeight="50.0" prefWidth="1018.0" style="-fx-background-color: #2D3447;">
+         <children>
+            <MenuBar layoutX="778.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="54.0" prefWidth="233.0" style="-fx-background-color: transparent;">
+               <menus>
+                  <Menu mnemonicParsing="false">
+                     <graphic>
+                        <Button mnemonicParsing="false" onAction="#Profile" prefHeight="39.0" prefWidth="46.0" style="-fx-background-color: transparent;">
+                           <graphic>
+                              <ImageView fitHeight="31.0" fitWidth="47.0">
+                                 <image>
+                                    <Image url="@../../../pp.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </graphic>
+                  </Menu>
+                  <Menu mnemonicParsing="false">
+                     <graphic>
+                        <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="51.0" style="-fx-background-color: transparent;">
+                           <graphic>
+                              <ImageView fitHeight="37.0" fitWidth="38.0">
+                                 <image>
+                                    <Image url="@../../../noti.png" />
+                                 </image>
+                                 <effect>
+                                    <Glow level="1.0" />
+                                 </effect>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </graphic>
+                     <items>
+                        <MenuItem mnemonicParsing="false">
+                           <graphic>
+                              <Label text="Mr.Fahad has conframed your deal" textFill="#a0a2ab" />
+                           </graphic>
+                        </MenuItem>
+                        <MenuItem mnemonicParsing="false">
+                           <graphic>
+                              <Label text="Mr.Fahad has cancenled your deal" textFill="#a0a2ab" />
+                           </graphic>
+                        </MenuItem>
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#settings" text="Settings" />
+                        <MenuItem mnemonicParsing="false" onAction="#logout" text="Logout" />
+                     </items>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="30.0">
+                           <image>
+                              <Image url="@../../../best3line.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Menu>
+               </menus>
+            </MenuBar>
+         </children>
+      </AnchorPane>
+      <ScrollPane layoutX="273.0" layoutY="54.0" prefHeight="926.0" prefWidth="1018.0">
+         <content>
+            <AnchorPane fx:id="rootPane2" prefHeight="1387.0" prefWidth="1018.0" style="-fx-background-color: #2D3447;">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2d3447" height="605.0" layoutX="222.0" layoutY="14.0" stroke="#a0a2ab" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="6.0" width="576.0" />
+                  <ImageView fx:id="imageView" fitHeight="567.0" fitWidth="536.0" layoutX="238.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="description" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="13.0" layoutY="780.0" prefHeight="239.0" prefWidth="994.0" style="-fx-border-color: a0a2ab;" text="Hello  my name is Injabin . This is my poperty ,worth of 30 million BDT. Hope you&#10;will love it . Don't judge it by just a house i kindly ask you to look it like an art&#10;" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="387.0" layoutY="631.0" prefHeight="46.0" prefWidth="262.0" style="-fx-border-color: a0a2ab;" text="Description" textFill="WHITE">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="525.0" layoutY="1244.0" mnemonicParsing="false" onAction="#contactOwner5" prefHeight="38.0" prefWidth="381.0" style="-fx-background-color: #151928; -fx-border-color: a0a2ab;" text="Contact Owner" textFill="#fff9f9">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="price" alignment="CENTER" layoutX="136.0" layoutY="1048.0" prefHeight="38.0" prefWidth="305.0" style="-fx-border-color: a0a2ab;" text="30 million BDT" textFill="#a0a2ab">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lcn" alignment="CENTER" layoutX="525.0" layoutY="1048.0" prefHeight="38.0" prefWidth="381.0" style="-fx-border-color: a0a2ab;" text="United City" textFill="#a0a2ab">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="house_no" alignment="CENTER" layoutX="136.0" layoutY="1119.0" prefHeight="38.0" prefWidth="305.0" style="-fx-border-color: a0a2ab;" text="ka 147/kha" textFill="#a0a2ab">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="mobile_no" alignment="CENTER" layoutX="136.0" layoutY="1184.0" prefHeight="38.0" prefWidth="305.0" style="-fx-border-color: a0a2ab;" text="01314535440" textFill="#a0a2ab">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="email" alignment="CENTER" layoutX="136.0" layoutY="1244.0" prefHeight="38.0" prefWidth="305.0" style="-fx-border-color: a0a2ab;" text="injabin29@gmail.com" textFill="#a0a2ab">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="38.0" fitWidth="39.0" layoutX="93.0" layoutY="1048.0">
+                     <image>
+                        <Image url="@../../../taka.png" />
+                     </image>
+                     <effect>
+                        <Glow level="1.0" />
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="38.0" fitWidth="51.0" layoutX="474.0" layoutY="1051.0">
+                     <image>
+                        <Image url="@../../../add.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="46.0" fitWidth="57.0" layoutX="85.0" layoutY="1240.0">
+                     <image>
+                        <Image url="@../../../ml1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="31.0" fitWidth="30.0" layoutX="98.0" layoutY="1188.0">
+                     <image>
+                        <Image url="@../../../ph.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="31.0" fitWidth="30.0" layoutX="98.0" layoutY="1123.0">
+                     <image>
+                        <Image url="@../../../hono.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="title" alignment="CENTER" layoutX="13.0" layoutY="703.0" prefHeight="54.0" prefWidth="994.0" style="-fx-border-color: a0a2ab;" text="Title : 300 cores worth property for sale" textFill="WHITE">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                     <effect>
+                        <Glow level="0.59" />
+                     </effect>
+                  </Label>
+                  <Label fx:id="negotiable" alignment="CENTER" layoutX="525.0" layoutY="1119.0" prefHeight="38.0" prefWidth="381.0" style="-fx-border-color: a0a2ab;" text="Negotaible" textFill="#a0a2ab">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sale" alignment="CENTER" layoutX="525.0" layoutY="1184.0" prefHeight="38.0" prefWidth="381.0" style="-fx-border-color: a0a2ab;" text="TO-LET" textFill="#a0a2ab">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <AnchorPane prefHeight="975.0" prefWidth="273.0" style="-fx-background-color: #2D3447;">
+         <children>
+            <ImageView fitHeight="231.0" fitWidth="233.0" layoutX="14.0" layoutY="14.0">
+               <image>
+                  <Image url="@../../../logo%20bgr.png" />
+               </image>
+            </ImageView>
+            <Line endX="69.0" layoutX="115.0" layoutY="260.0" startX="-100.0" stroke="#a0a2ab" />
+            <Button layoutX="37.0" layoutY="478.0" mnemonicParsing="false" onAction="#home" prefHeight="38.0" prefWidth="188.0" style="-fx-background-color: tranparent; -fx-border-color: a0a2ab;" text="DashBoard" textFill="#a0a2ab">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <effect>
+                  <Glow level="0.0" />
+               </effect>
+            </Button>
+            <Label layoutX="14.0" layoutY="267.0" prefHeight="127.0" prefWidth="233.0" text="Welcome to NextNest! &#10;Discover, connect, and settle&#10;effortlessly. Your dream home&#10;is just a click away!&#10;" textAlignment="CENTER" textFill="#a0a2ab">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Button layoutX="37.0" layoutY="540.0" mnemonicParsing="false" onAction="#Profile" prefHeight="38.0" prefWidth="188.0" style="-fx-background-color: tranparent; -fx-border-color: a0a2ab;" text="Profile" textFill="#a0a2ab">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button layoutX="37.0" layoutY="601.0" mnemonicParsing="false" onAction="#yourpost" prefHeight="38.0" prefWidth="188.0" style="-fx-background-color: tranparent; -fx-border-color: a0a2ab;" text="NewPost" textFill="#a0a2ab">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button layoutX="37.0" layoutY="661.0" mnemonicParsing="false" onAction="#Review" prefHeight="47.0" prefWidth="188.0" style="-fx-background-color: tranparent; -fx-border-color: a0a2ab;" text="Review&amp;Complain" textFill="#a0a2ab">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Line endX="110.0" layoutX="137.0" layoutY="765.0" startX="-111.0" stroke="#a0a2ab" />
+            <Button layoutX="78.0" layoutY="790.0" mnemonicParsing="false" onAction="#aboutUs" prefHeight="31.0" prefWidth="106.0" style="-fx-background-color: tranparent; -fx-border-color: a0a2ab;" text="AboutUs" textFill="#a0a2ab">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="975.0" prefWidth="1291.0" stylesheets="@textf.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.nextnest.ReviewComplainController">
+   <children>
+      <AnchorPane prefHeight="975.0" prefWidth="273.0" style="-fx-background-color: #2D3447;">
+         <children>
+            <ImageView fitHeight="231.0" fitWidth="233.0" layoutX="14.0" layoutY="14.0">
+               <image>
+                  <Image url="@../../../logo%20bgr.png" />
+               </image>
+            </ImageView>
+            <Line endX="69.0" layoutX="115.0" layoutY="260.0" startX="-100.0" stroke="#a0a2ab" />
+            <Button layoutX="37.0" layoutY="478.0" mnemonicParsing="false" onAction="#home" prefHeight="38.0" prefWidth="188.0" style="-fx-background-color: tranparent; -fx-border-color: a0a2ab;" text="DashBord" textFill="#a0a2ab">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <effect>
+                  <Glow level="0.0" />
+               </effect>
+            </Button>
+            <Label layoutX="14.0" layoutY="267.0" prefHeight="127.0" prefWidth="233.0" text="Welcome to NextNest! &#10;Discover, connect, and settle&#10;effortlessly. Your dream home&#10;is just a click away!&#10;" textAlignment="CENTER" textFill="#a0a2ab">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Button layoutX="37.0" layoutY="540.0" mnemonicParsing="false" onAction="#Profile" prefHeight="38.0" prefWidth="188.0" style="-fx-background-color: tranparent; -fx-border-color: a0a2ab;" text="Profile" textFill="#a0a2ab">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button layoutX="37.0" layoutY="601.0" mnemonicParsing="false" onAction="#yourpost" prefHeight="38.0" prefWidth="188.0" style="-fx-background-color: tranparent; -fx-border-color: a0a2ab;" text="NewPost" textFill="#a0a2ab">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button layoutX="37.0" layoutY="661.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="188.0" style="-fx-background-color: tranparent; -fx-border-color: a0a2ab;" text="Review&amp;Complain" textFill="#a0a2ab">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <effect>
+                  <Glow level="1.0" />
+               </effect>
+            </Button>
+            <Line endX="110.0" layoutX="137.0" layoutY="765.0" startX="-111.0" stroke="#a0a2ab" />
+            <Button layoutX="78.0" layoutY="790.0" mnemonicParsing="false" onAction="#aboutUs" prefHeight="31.0" prefWidth="106.0" style="-fx-background-color: tranparent; -fx-border-color: a0a2ab;" text="AboutUs" textFill="#a0a2ab">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="273.0" prefHeight="50.0" prefWidth="1018.0" style="-fx-background-color: #2D3447;">
+         <children>
+            <MenuBar layoutX="778.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="54.0" prefWidth="233.0" style="-fx-background-color: transparent;">
+               <menus>
+                  <Menu mnemonicParsing="false">
+                     <graphic>
+                        <Button mnemonicParsing="false" onAction="#Profile" prefHeight="39.0" prefWidth="46.0" style="-fx-background-color: transparent;">
+                           <graphic>
+                              <ImageView fitHeight="31.0" fitWidth="47.0">
+                                 <image>
+                                    <Image url="@../../../pp.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </graphic>
+                  </Menu>
+                  <Menu mnemonicParsing="false">
+                     <graphic>
+                        <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="51.0" style="-fx-background-color: transparent;">
+                           <graphic>
+                              <ImageView fitHeight="37.0" fitWidth="38.0">
+                                 <image>
+                                    <Image url="@../../../noti.png" />
+                                 </image>
+                                 <effect>
+                                    <Glow level="1.0" />
+                                 </effect>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </graphic>
+                     <items>
+                        <MenuItem mnemonicParsing="false">
+                           <graphic>
+                              <Label text="Mr.Fahad has conframed your deal" textFill="#a0a2ab" />
+                           </graphic>
+                        </MenuItem>
+                        <MenuItem mnemonicParsing="false">
+                           <graphic>
+                              <Label text="Mr.Fahad has cancenled your deal" textFill="#a0a2ab" />
+                           </graphic>
+                        </MenuItem>
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#settings" text="Settings" />
+                        <MenuItem mnemonicParsing="false" onAction="#logout" text="Logout" />
+                     </items>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="30.0">
+                           <image>
+                              <Image url="@../../../best3line.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Menu>
+               </menus>
+            </MenuBar>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="273.0" layoutY="50.0" prefHeight="926.0" prefWidth="1018.0">
+         <children>
+            <ScrollPane prefHeight="926.0" prefWidth="1018.0">
+               <content>
+                  <AnchorPane fx:id="rootPane2" prefHeight="1800.0" prefWidth="1018.0">
+                     <children>
+                        <AnchorPane layoutX="5.0" layoutY="1189.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="1009.0" style="-fx-background-color: #2D3447;" stylesheets="@textA.css">
+                           <children>
+                              <TextArea fx:id="complaintTextArea" layoutX="6.0" layoutY="102.0" prefHeight="349.0" prefWidth="1001.0" promptText="Please discribe your problem fully" styleClass="text-area">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </TextArea>
+                              <Label layoutX="13.0" layoutY="14.0" prefHeight="42.0" prefWidth="254.0" text="Add a complain" textFill="WHITE">
+                                 <font>
+                                    <Font size="34.0" />
+                                 </font>
+                              </Label>
+                              <Line endX="144.0" endY="-15.0" layoutX="114.0" layoutY="79.0" startX="-75.0" startY="-15.0" stroke="WHITE" />
+                              <Button layoutX="407.0" layoutY="463.0" mnemonicParsing="false" onAction="#handleComplaintSubmit" prefHeight="37.0" prefWidth="195.0" style="-fx-background-color: #151928;" text="Submit" textFill="#a0a2ab" />
+                           </children>
+                        </AnchorPane>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2d3447" height="289.0" layoutX="5.0" layoutY="8.0" stroke="#a0a2ab" strokeType="INSIDE" width="1004.0" />
+                        <Label fx:id="name" layoutX="243.0" layoutY="74.0" prefHeight="47.0" prefWidth="309.0" text="Md.Injabin Alam" textFill="#a0a2ab">
+                           <font>
+                              <Font size="39.0" />
+                           </font>
+                           <effect>
+                              <Glow level="1.0" />
+                           </effect>
+                        </Label>
+                        <Label fx:id="address" layoutX="245.0" layoutY="130.0" prefHeight="38.0" prefWidth="305.0" text="ka-147/kha,Khilkhet, Dhaka -1229" textFill="#a0a2ab">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="245.0" layoutY="164.0" prefHeight="38.0" prefWidth="81.0" text="Phone :" textFill="#a0a2ab">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="phn_no" layoutX="326.0" layoutY="164.0" prefHeight="38.0" prefWidth="129.0" text="01314535440" textFill="#a0a2ab">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutX="5.0" layoutY="674.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="1009.0" style="-fx-background-color: #2D3447;" stylesheets="@textA.css">
+                           <children>
+                              <Label layoutX="14.0" layoutY="29.0" prefHeight="42.0" prefWidth="442.0" text="Help Us Make the App Better" textFill="WHITE">
+                                 <font>
+                                    <Font size="34.0" />
+                                 </font>
+                              </Label>
+                              <Line endX="409.0" endY="-15.0" layoutX="95.0" layoutY="96.0" startX="-75.0" startY="-15.0" stroke="WHITE" />
+                              <Button layoutX="407.0" layoutY="469.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="37.0" prefWidth="195.0" style="-fx-background-color: #151928;" text="Submit" textFill="#a0a2ab" />
+                              <TextArea fx:id="textArea" layoutX="5.0" layoutY="114.0" prefHeight="341.0" prefWidth="1001.0" promptText="Please discribe how can we upgrade your App" styleClass="transparent-text-area">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </TextArea>
+                           </children>
+                        </AnchorPane>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2d3447" height="369.0" layoutX="5.0" layoutY="301.0" stroke="BLACK" strokeType="INSIDE" width="1009.0" />
+                        <Label layoutX="15.0" layoutY="339.0" prefHeight="42.0" prefWidth="228.0" text="About the App" textFill="#a0a2ab">
+                           <font>
+                              <Font size="34.0" />
+                           </font>
+                        </Label>
+                        <Line endX="197.0" endY="-15.0" layoutX="99.0" layoutY="404.0" startX="-75.0" startY="-15.0" stroke="WHITE" />
+                        <Label layoutX="13.0" layoutY="397.0" prefHeight="243.0" prefWidth="993.0" text="NextNest is a comprehensive platform designed to connect people looking for to-lets &#10;and homes for rent or sale. Built by the Code Farmers organization,it offers features &#10;like advanced search options, 360-degree property views, direct communication &#10;between buyers and sellers, and personalized recommendations. NextNest simplifies &#10;the process of finding your dream home or renting out your property with efficiency &#10;and ease.&#10;" textFill="#a0a2ab">
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutX="5.0" layoutY="1709.0" prefHeight="84.0" prefWidth="1009.0" style="-fx-background-color: #2D3447;">
+                           <children>
+                              <Label layoutX="361.0" layoutY="24.0" text="Thanks For Your Fitback" textFill="#a0a2ab">
+                                 <font>
+                                    <Font size="31.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1fff9a00" height="270.0" layoutX="11.0" layoutY="17.0" stroke="#a0a2ab" strokeType="INSIDE" strokeWidth="5.0" width="214.0" />
+                        <ImageView fx:id="pro_pic" fitHeight="257.0" fitWidth="200.0" layoutX="18.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
